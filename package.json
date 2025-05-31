@@ -1,0 +1,26 @@
+{
+  "name": "meowboxes",
+  "version": "0.0.2",
+  "description": "chat but cat",
+  "main": "scripts/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catrowfee/meowboxes.git"
+  },
+  "keywords": [
+    "chat",
+    "cat"
+  ],
+  "author": "Catrophie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/catrowfee/meowboxes/issues"
+  },
+  "homepage": "https://github.com/catrowfee/meowboxes#readme",
+  "dependencies": {
+    "socket.io": "^4.8.1"
+  }
+}
