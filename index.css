@@ -1,0 +1,84 @@
+/* Global */
+*{
+    margin: 0;
+    padding: 0;
+    /* border: 0; */
+}
+
+h1,h2,h3,h4,h5,h6 {
+    display: inline;
+}
+
+body {
+    background-color: #141415;
+    color: #c6c6c6;
+    font-family: Arial;
+    margin: 0;
+}
+
+.fs {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Custom */
+#chat {
+    width: 97vw;
+    height: 87vh;
+    padding: 1vh;
+    padding-left: 2vh;
+    list-style-type: none;
+}
+
+#input_w {
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+}
+
+#input_b_w {
+    display: inline;
+    float: right;
+} #input_b_w button {
+    padding: 0.3vh 0.5vh;
+}
+
+#input {
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: #c6c6c6;
+    padding-left: 1vh;
+    width: 95vw;
+    height: 2.5vh;
+}
+
+#emoji_w {
+    padding: 1vh;
+    position: absolute;
+    bottom: 3.6vh;
+    right: 0;
+    background-color: #0b0b0b;
+    border: 0.1em solid #c6c6c6;
+    height: 50vh;
+    width: 23vw;
+    user-select: none;
+} .emoji-table {
+    width: 18em;
+} .emoji-table td {
+    height: 1.4em;
+    max-width: 0.7em;
+    text-align: center;
+    border: 0.1em solid white;
+}
+
+/* chat messages */
+.msg.head {
+    max-width: min-content;
+    font-size: 0.9em;
+    transform: translate(-1vh,0vh);
+    padding-top: 0.3em;
+    /* -webkit-text-stroke: 0.1vh salmon; */
+} .msg.head.you, .msg.body.you {
+    color: greenyellow;
+}

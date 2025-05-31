@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meowboxes</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="head_w">
+        <h2 id="head-name">FBI group chat</h2>
+        &bull;
+        <span head="head-online-count">0 </span>
+        <span id="head-online-label">online</span>
+    </div>
+    <hr>
+    <div id="chat_w">
+        <ul id="chat">
+        </ul>
+    </div>
+    <div id="emoji_w" hidden=true>
+              <h3>Emojis</h3>
+              <button onclick="document.getElementById('emoji_w').hidden = true;" style="float:right">&nbsp;x&nbsp;</button>
+              <hr><br>
+              <span>Commonly used</span>
+              <table class="emoji-table">
+                <tr>
+                    <td>😭</td>
+                    <td>🙏</td>
+                    <td>👍</td>
+                    <td>👎</td>
+                    <td>💀</td>
+                    <td>😂</td>
+                </tr>
+                <tr>
+                    <td>🗿</td>
+                    <td>🥀</td>
+                    <td>😱</td>
+                    <td>❤️</td>
+                </tr>
+              </table><br>
+              <span>Expressions</span>
+              <table class="emoji-table">
+                <tr>
+                    <td>😁</td>
+                    <td>😅</td>
+                    <td>😍</td>
+                    <td>🥰</td>
+                    <td>🤩</td>
+                </tr>
+                <tr>
+                    <td>🤔</td>
+                    <td>🤨</td>
+                    <td>😑</td>
+                    <td>😏</td>
+                    <td>🙄</td>
+                </tr>
+                <tr>
+                    <td>😯</td>
+                    <td>😫</td>
+                    <td>😤</td>
+                    <td>🤑</td>
+                    <td>😨</td>
+                </tr>
+                <tr>
+                    <td>🤯</td>
+                    <td>😮‍💨</td>
+                </tr>
+              </table>
+    </div>
+    <div id="input_w">
+        <hr>
+        <input id="input" autocomplete="off" autocorrect="off" autocapitalize="off">
+        <div id="input_b_w">
+            <button id="image_b" onclick="document.getElementById('emoji_w').hidden = !document.getElementById('image_w').hidden">^o</button>
+            <button id="emoji_b" onclick="document.getElementById('emoji_w').hidden = !document.getElementById('emoji_w').hidden">:D</button>
+        </div>
+    </div>
+    <!-- <script src="testing.js"></script> -->
+    <!-- <script src="scripts/testging.js"></script> -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+    <!-- <script src="scripts/client.js"></script> -->
+    <script src="index.js"></script>
+</body>
+</html>
